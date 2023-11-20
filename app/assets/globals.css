@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.tab-arrow::before {
+  width: 11px;
+  height: 11px;
+}

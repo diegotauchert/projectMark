@@ -5,5 +5,5 @@ type titleType = {
 };
 
 export const Title = ({ children }: titleType): ReactElement => (
-  <h1 className="font-bold text-title text-gray800">{children}</h1>
+  <h1 className="font-semibold text-title text-gray800 mt-4">{children}</h1>
 );

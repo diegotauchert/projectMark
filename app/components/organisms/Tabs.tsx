@@ -5,7 +5,7 @@ type tabsType = {
 };
 
 export const Tabs = ({ children }: tabsType): ReactElement => (
-  <div className="tabs flex my-8 gap-4">
+  <div role="list" className="tabs flex mt-10 mb-16 gap-4">
     {children}
   </div>
 );

@@ -12,6 +12,8 @@ const config: Config = {
         transparent: 'transparent',
         primary: '#EDF2F7',
         gray800: '#2D3748',
+        blueHighlight: '#2462D1',
+        blueBorder: '#BFCFE0',
         s1: '#DABFFF',
         s1Light: '#E9D9FF',
         s1Lighter: '#F7F1FF',
@@ -39,13 +41,14 @@ const config: Config = {
       },
       fontSize: {
         small: ['0.656rem', '0.884rem'],
-        title: ['1.641rem', '2.138rem']
+        title: ['1.641rem', '2.138rem'],
+        mdLarge: ['1.063rem', '1.19rem']
       },
       minHeight: {
         auto: 'auto',
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 }
 export default config
