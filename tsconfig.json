@@ -23,6 +23,8 @@
       "@/assets/*": ["app/assets/*"],
       "@/components/*": ["app/components/*"],
       "@/constants/*": ["app/constants/*"],
+      "@/enums/*": ["app/enums/*"],
+      "@/utils/*": ["app/utils/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

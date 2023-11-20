@@ -2,3 +2,4 @@ export const TEXT_TITLE: string = 'Please select the type of sales pipeline that
 export const TEXT_NEXT: string = 'Next';
 export const TEXT_NAV_ITEM: string[] = ['Sales Pipeline Settings', 'Opportunity Details Settings']
 export const TEXT_TAB_ITEM: string[] = ['Basic', 'Advanced', 'Expert', 'Custom']
+export const TEXT_BOARD_ITEM: string[] = ['Lead', 'RFP In Progress', 'Submitted', 'Won', 'Lost', 'Closed']

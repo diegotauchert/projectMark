@@ -25,7 +25,7 @@ export const Tab = ({ text, isChecked, onTabClick }: tabType): ReactElement => {
           type="checkbox" 
           id={`input-${text}`} 
           checked={isChecked}
-          readOnly
+          value={text}
           className="w-4 h-4 bg-white border-2 border-gray-300 rounded !outline-none focus:ring-0" 
         />
         <label htmlFor={`input-${text}`} className='text-sm text-gray800 z-0 select-none'>{text}</label>

@@ -6,7 +6,7 @@ import { Button } from '@/components/atoms/Button'
 import { TEXT_NEXT,TEXT_NAV_ITEM } from '@/constants/text'
 
 export const Header = (): ReactElement => (
-  <header className="md:flex text-center items-center justify-between py-4 pl-2 pr-6">
+  <header className="md:flex text-center items-center justify-between py-4 md:pl-2 md:pr-6">
     <Image
         src="/logo.svg"
         alt="ProjectMark Logo"

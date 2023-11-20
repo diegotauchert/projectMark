@@ -1,11 +1,13 @@
-import { ReactElement, ReactNode } from 'react';
+import { ReactElement } from 'react';
+import { boardColumnVariantEnum } from 'app/enums/variant'
 
 type columnBoardType = {
-  variant: 's1' | 's2' | 's3' | 's4' | 's5' | 's6';
+  variant: boardColumnVariantEnum;
   name: string;
+  enable: boolean;
 };
 
-export const ColumnBoard = ({ variant, name }: columnBoardType): ReactElement => {
+export const ColumnBoard = ({ variant, name, enable }: columnBoardType): ReactElement => {
   const colorVariants = {
     s1: {bg: 'bg-s1Lighter', title: 'text-s1Darker', marker: 'bg-s1Light before:bg-s1', square: 'border-s1Light'},
     s2: {bg: 'bg-s2Lighter', title: 'text-s2Darker', marker: 'bg-s2Light before:bg-s2', square: 'border-s2Light'},
@@ -17,7 +19,7 @@ export const ColumnBoard = ({ variant, name }: columnBoardType): ReactElement =>
 
   return (
     <div 
-      className={`columnBoard p-3.5 w-full min-h-[558px] mb-4 bg-gradient-to-t from-white rounded-xl ${colorVariants[variant].bg}`}
+      className={`columnBoard p-3.5 w-full min-h-[558px] mb-4 bg-gradient-to-t from-white rounded-xl overflow-hidden ${colorVariants[variant].bg} ${enable ? 'visible' : 'hidden invisible'}`}
     >
       <h2 
         className={`uppercase font-semibold whitespace-nowrap text-sm truncate mb-3 ${colorVariants[variant].title}`}
@@ -26,7 +28,7 @@ export const ColumnBoard = ({ variant, name }: columnBoardType): ReactElement =>
         {name}
       </h2>
       <div className={`marker w-7/12 h-[21.98px] rounded-full mb-2.5 before:block before:w-5/12 before:h-full before:rounded-full ${colorVariants[variant].marker}`}></div>
-      <div className={`square scale-x-110 w-full h-[174.94px] border rounded-xl ${colorVariants[variant].square}`}></div>
+      <div className={`square scale-x-105 md:scale-x-110 origin-center w-full h-[174.94px] border rounded-xl ${colorVariants[variant].square}`}></div>
     </div>
   )
 }
