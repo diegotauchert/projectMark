@@ -17,7 +17,7 @@ export const Tab = ({ text, isChecked, onTabClick }: tabType): ReactElement => {
   return (
     <div className="relative">
       <div 
-        className={`tab flex gap-3 items-center relative border rounded-lg w-[210px] px-4 py-3 cursor-pointer transition duration-100 ease-in ${isChecked ? colorScheme.active : colorScheme.notActive}`}
+        className={`tab flex gap-3 items-center relative border rounded-lg md:w-[210px] px-4 py-3 cursor-pointer transition duration-100 ease-in ${isChecked ? colorScheme.active : colorScheme.notActive}`}
         onClick={onTabClick}
         role="listitem"
       >
