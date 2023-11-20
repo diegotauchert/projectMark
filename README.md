@@ -1,7 +1,3 @@
-## Run the project using Node
-
-`Node Version: <= 18.17`
-
 ## Run the project using Docker
 
 ```bash
@@ -11,12 +7,24 @@ make deploy_dev
 and then 
 
 ```bash
-make start
+make dev
 ```
 
-## Getting Started
+Open [http://localhost:3006](http://localhost:3006) with your browser to see the result.
+
+## or Run the project using Node
+
+`Node Version: <= 18.17`
+
+## Installing
 
 First, run the development server:
+
+```bash
+yarn install
+```
+
+and then 
 
 ```bash
 npm run dev
