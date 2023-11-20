@@ -1,6 +1,18 @@
-## Node Version
+## Run the project using Node
 
-`<= 18.17`
+`Node Version: <= 18.17`
+
+## Run the project using Docker
+
+```bash
+make deploy_dev
+```
+
+and then 
+
+```bash
+make start
+```
 
 ## Getting Started
 
@@ -18,21 +30,21 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ProjectMark coding Challenge
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You have 5 days from the day the challenge was sent to complete the screen from the prototype link below. You can complete in any frontend framework of your choice and use any css framework. What we are looking for in this challenge.
 
-## Learn More
+Must be the same as the design on the screen
+We will be looking for cleanliness of code and good design patterns
+The checkboxes should be actionable. When you click one of them, the columns should change. You can change whatever way you want whether it is to show less or more.
+Only one checkbox can be selected at a time.
+Selected checkbox should have the blue outline
+Top step buttons dont have to be actionable.
+Add it to github or bitbucket and provide a link to the repo
+Provide setup instructions on how to set it up and view
 
-To learn more about Next.js, take a look at the following resources:
+The link to the prototype: https://www.figma.com/proto/asXbI2SHBcpD236mhCoVIN/Untitled?type=design&node-id=1-323&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A323
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You may need to request access here if you can't see the link on the figma file:  https://www.figma.com/file/asXbI2SHBcpD236mhCoVIN/Onboarding-Screen?type=design&node-id=0%3A1&mode=design&t=fJ9Z0g0Igtf8D93P-1
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any questions, please don't hesitate to reach out and ask. Wish you the best of luck!

@@ -1,0 +1,13 @@
+version: '1'
+services:
+  dev:
+    container_name: projectmark
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+      args:
+        - img=node:18.17.1
+    ports:
+      - "3006:3000"
+    volumes:
+      - '.:/app'
