@@ -19,7 +19,7 @@ export const ColumnBoard = ({ variant, name, enable }: columnBoardType): ReactEl
 
   return (
     <div 
-      className={`columnBoard p-3.5 w-full min-h-[558px] mb-4 bg-gradient-to-t from-white rounded-xl overflow-hidden ${colorVariants[variant].bg} ${enable ? 'visible' : 'hidden invisible'}`}
+      className={`columnBoard p-3.5 w-full min-h-[558px] min-w-[210px] mb-4 bg-gradient-to-t from-white rounded-xl overflow-hidden ${colorVariants[variant].bg} ${enable ? 'visible' : 'hidden invisible'}`}
     >
       <h2 
         className={`uppercase font-semibold whitespace-nowrap text-sm truncate mb-3 ${colorVariants[variant].title}`}
